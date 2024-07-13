@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Website Template | Easy Mode Replica App - Home | Html | Css | Home Page</title>
+	<meta name="description" content="">
+   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+<div class="box">
+
+	<div class="row header">
+
+		<div class="header-banner">
+
+
+			<div class="logo-button">
+				<a href="images/logo.png" download style="color: lightgray; text-decoration:none">
+				<img style="vertical-align:top" src="images/logo.png" alt="logo image" height="60px" >
+				</a>
+			</div>
+
+
+			<nav class="header-menu">
+				<ul class="tab-container">
+
+
+					<!-- Code for expanding search box below (google is used as a default - add homepage link to search your own site) -->
+					<li class="search-wrapper">
+						<form action="https://www.google.com/search" class="search">
+							<input class="search" type="search" name="q" placeholder="Search Google" required />
+							<button type="submit"><i class="search-icon-white"></i></button>
+							<!-- or you could use: <img src="images/search-icon-gray.png" height="18px"/> instead of css base64 <i> -->
+						</form>
+					</li>
+				</ul>
+			</nav>
+
+
+			<div class="header-text">
+				<h1>Easy Mode Replica App</h1>
+			</div>
+
+		</div>
+
+	</div><!-- row header closing -->
+
+
+	<div class="row content" style="font-family: Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, garamond, serif; font-size: large; margin-left: 40px; margin-right: 40px;">
+		
+		<p><a href="downloads/easy-mode-replica-app.zip">Download the app (it’s free!)</a></p>
+
+		<p>This free app replicates Samsung's easy mode (from a Samsung Galaxy S4) onto a large variety of newer or replacement android phones for people who like the simplicity of this layout or might find changing to a new one difficult.</p>
+
+		<p>A work in progress - functions on many phones but not a polished app on all devices by any means (you will have to just try it on your own device and see if it works), unfortunately don't have the time for further work on it at present. Please see my KWGT widgets version as an alternative if this doesn't work on your device: <a href="https://boxbot6.github.io/easy-mode-replica-widgets">https://boxbot6.github.io/easy-mode-replica-widgets</a> (I'll also include the Android Studio project files that I used to make this app with the downloads below for those interested in the code).</p>
+
+		<br />
+
+
+		<div class="center">
+			<content-image>
+			<a href="images/easy-mode-replica-app-example-1.png">
+			<img src="images/easy-mode-replica-app-example-1.png" width="100%" />
+			</a>
+			</content-image>
+		</div>
+
+		<p>Shown here working on my Samsung Galaxy A40, S5 and A15, but should work on many other makes and models of phones.</p>
+
+		<br />
+
+		<h2>Files available to download:</h2>
+
+		<ul>
+			<li>Here's the app if you just want to try it out (easy-mode-replica-app.zip) - the .zip also includes the Galaxy S4 Icon Pack</li>
+		</ul>
+
+		<div class="download-button"">
+			<a href="downloads/easy-mode-replica-app.zip" download style="color:white; text-decoration:none">
+			<span>Download &nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<img style="vertical-align:middle" src="images/download-icon-1.png" alt="image" height="25">
+			</a>
+		</div>
+			
+		<br />
+		<br />
+
+		<ul>
+			<li>Here are all the Android Studio files used for making this app inside a project folder along with another folder of extra-files (easy-mode-replica-app-working-files.zip) - unzip the download and then drag the whole project folder onto your Android Studio desktop icon to open it (or select the folder from 'File > Open' menu within an open instance of Android Studio)</li>
+		</ul>
+		
+		<div class="download-button"">
+			<a href="downloads/easy-mode-replica-app-working-files.zip" download style="color:white; text-decoration:none">
+			<span>Download &nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<img style="vertical-align:middle" src="images/download-icon-1.png" alt="image" height="25">
+			</a>
+		</div>
+
+
+		<br />
+		<br />
+		<br />
+
+
+		<h2>To use the app:</h2>
+
+		<ul>
+			<li>Download and unzip the files.</li>
+
+			<li>Install the .apk to your phone (it is not signed so you will have to allow apps from unknown sources).</li>
+
+			<li>Turn on location and allow internet access for this app to get the weather or press the apps icon to open its main screen and enter a city there without turning on location services.</li>
+
+			<li>Add the widgets by long-pressing on an android homescreen and adding them from the bottom menu item for widgets that appears.</li>
+
+			<li>Adjust the position and size of the widgets.</li>
+
+			<li>Set your preferences for the app in its settings by clicking on the apps icon and then pressing the settings button</li>
+		</ul>
+
+
+		<br />
+
+
+		<h2>Troubleshooting:</h2>
+
+		<ul>
+			<li>If it doesn't work - due to so many different phone and android version combinations if any part doesn't work please first try the general fixes below:</li>
+
+			<li>Turn on location and allow internet access to get the weather.</li>
+
+			<li>After first installation also try turning the phones location services off and on again or restart the phone to reset the services and get the weather location working for the app, please give app permissions and also have internet active and check that you are online.</li>
+
+			<li>If the weather consistantly doesn't work? - This app uses openweathermap to obtain the current weather data by making API calls (basically requests for information) to openweathermap by sending a request and free identifying key.</li>
+
+			<li>If this free key expires or is overused it could stop working and you will need to get your own free key and update the settings or use android studio to update the apps code to include your own key which you can get from <a href="https://openweathermap.org">https://openweathermap.org</a></li>
+
+			<li>Put your own valid API_key in Settings or if you are editing the app using Android Studio in MainActivity/class APIWeatherCall</li>
+
+			<li>Touch Actions - If any of the touch actions dont work please first try editing the apps settings by pressing the apps icon and then the settings button. Check that the links for the touch actions that you wish to use are activated and update them to the appropriate actions for your particular device, otherwise switch them off.</li>
+		</ul>
+
+
+		<p>(Basic how to make an API call instructions can be found at <a href="https://openweathermap.org">https://openweathermap.org</a> or see example below - open a free openweathermap account to get your own API key.</p>
+
+		<br />
+
+		<p>Please Note: On older versions of android there is no support for displaying packaged fonts and so it will substitute system fonts and appear similar to below.</p>
+
+		<img src="images/easy-mode-replica-app-example-4.png" alt="easy-mode-replica-app-example" width="25%">
+
+		<br />
+		<br />
+
+
+<p>Tips on how to show the current weather icon in your own app using OpenWeatherMap and Android Studio (includes using the day/night icons).</p>
+
+
+<p>// general overview of the method //</p>
+
+
+		<ul>
+			<li>Get the current weather data by making an API call (basically a request for information) to openweathermap by sending a free key.
+(How to make an API call instructions at https://openweathermap.org/current or see example below - open a free openweathermap account to get your own API key).</li>
+
+		<br />
+
+			<li>Use the response from openweathermap to populate some new variables: sunrise, sunset, updatedAt and description. (generally use the 'description' part of the response from openweathermap rather than 'main' or 'icon' because it contains the largest range of weather conditions).</li>
+
+		<br />
+
+			<li>Use sunrise, sunset and updatedAt to create a night-time indicator tag (nightTag) to use in conjunction with the description.</li>
+
+		<br />
+
+			<li>Use description and nightTag in the font conversion code 'convert openweathermap descriptions to easy-weather-icons-font' (given in the MainActivity example-code below) to display the corresponding icon from the font.</li>
+
+		<br />
+
+			<li>Add the widgets by long-pressing on the homescreen and adding from the bottom menu that appears.</li>
+
+		<br />
+
+			<li>For an example of how to use Android Studio to make an app that shows the current weather (using openweathermap and easy-weather-icons) please use this link and scroll down to the API Demo: <a href="https://boxbot6.github.io/easy-weather-icons-font">https://boxbot6.github.io/easy-weather-icons-font</a></li>
+
+		</ul>
+
+
+		<br />
+		<br />
+
+
+		<h2>Some general notes if you are editing the apps code in Android Studio:</h2>
+
+		<ul>
+			
+			<li>If you are renaming anything in Android Studio right-click it and select Refactor > Rename, to change all the instances where it is used and linked throughout the project to ensure continuity.</li>
+			<li>Use right-click 'Find Usages' to check what things are connected to and use 'Delete > Safe Delete' before removing things to make sure they are not being used elsewhere and it is ok to get rid them.</li>
+			<li>The best way to start modifying the code is to add snippets of code that you have already tested elsewhere in other projects and you know already work with your version of Android studio. Or otherwise make small changes and keep checking if it still works - most of the time you can press Edit > Undo to go back to what was working.</li>
+
+			<li>In the AndroidManifest.xml you can change the icon that your android app shows by adding a 512x512 pixel icon in .png format to the <b>app</b> > res > drawable folder and updating android:icon="@drawable/name_of_the_icon_you_added_to_drawable_folder_here". Alternatively you can more correctly right-click on the res folder and select New > Image Asset and use the dialog to make a proper full set of icons for the app - use android:icon="@mipmap/ic_launcher" to show these icons.</li>
+			<li>Also in the AndroidManifest.xml you can change the name that shows for the app by changing android:label="app_name_you_want_to_show_here".</li>
+			<li>Put any images you want to use in your project into the drawable folder and link to them by using "@drawable/name_of_the_image_you_added_to_drawable_folder_here".</li>
+			<li>As a general rule in Android Studio to add text to layouts try to use reference strings like "@string/text_reference_id_here" rather than putting your text directly in the layout code (you put the actual text you want as a string in res > values > strings.xml - example: &lt;string name="text_reference_id_here">The text you want to reference here&lt;/string> and link to that with "@string/text_reference_id_here"). One reason for using values is to make translating all the text in an app easier.</li>
+			<li>For first-timers probably stick to the project name as it is because changing the name is a bit convoluted depending on which version you are using but if you want to change it there is a helpful guide <a href="https://stackoverflow.com/questions/18276872/change-project-name-on-android-studio/">here</a> but it may have changed for newer versions</li>
+			
+
+		</ul>
+
+		<br />
+		<br />
+
+
+		<h2>A few things about the code:</h2>
+
+		<ul>
+			<li>I have converted the code to kotlin for this project so it no longer uses java.</li>
+			<li>The app has a min SDK/API level of 16 (Android 4.1 Jelly Bean).</li>
+			<li>The app will not be signed so you will have to do that seperately if you wish to distribute it commercially (Look up: How do I sign and publish an Android app?)
+</li>
+			<li>For help on most things regarding Android Studio go to <a href="https://stackoverflow.com/">stackoverflow.com</a> and dig through the answers and examples there.</li>
+		</ul>
+
+
+		<br />
+		<br />
+
+		
+		<h2>References:</h2>
+
+		<ul>
+			<li>These widgets are designed to look like Samsung Easy Mode running on Android 4.4.2 (Galaxy S4 mini version).</li>
+			<li>Tested on Samsung Galaxy A15, A40, etc.</li>
+			<li>The main app contains my 'easy-weather-icons-font.ttf' to show the weather conditions, it can be found for free use in your own projects at this link: <a href="https://boxbot6.github.io/easy-weather-icons-font">https://boxbot6.github.io/easy-weather-icons-font</a> (example below).</li>
+		</ul>
+
+		<br />
+
+			<div><a href="images/easy-weather-icons-font-v2-example-4.png"><img src="images/easy-weather-icons-font-v2-example-4.png" width="100%"/></a></div>
+
+		<br />
+
+		<ul>
+			<li>The download also contains a set of Galaxy S4 icons 'galaxy-s4-icon-pack.zip' if you want to show a matching set of S4 icons by using an app like Nova Launcher, it can also be found for free use in your own projects at this link: <a href="https://boxbot6.github.io/galaxy-s4-icon-pack">https://boxbot6.github.io/galaxy-s4-icon-pack</a> (example below).</li>
+		</ul>
+
+		<br />
+
+			<div><a href="images/galaxy-s4-icon-pack-v1-sample-1.png"><img src="images/galaxy-s4-icon-pack-v1-sample-1.png" width="100%"/></a></div>
+
+		<br />
+
+
+		<h4>To use the Icon Pack in Nova Launcher:</h4>
+
+
+		<br />
+
+		
+		<h4>Press:</h4>
+
+		
+		<div>
+			<a href="images/nova-settings-icon.png">
+			<img src="images/nova-settings-icon.png" width="100px" />
+			</a>
+		</div>
+
+
+		<br />
+
+		
+		<h4>To load the whole icon pack:</h4>
+
+
+		<div class="grid-container-4-3-2-1">
+
+			<content-image-spaced>
+			<a href="images/test-image-6a.png">
+			<img src="images/icon-pack-template-full-sample-6a.png" width="100%" />
+			</a>
+			</content-image-spaced>
+
+
+			<content-image-spaced>
+			<a href="images/test-image-6b.png">
+			<img src="images/icon-pack-template-full-sample-6b.png" width="100%" />
+			</a>
+			</content-image-spaced>
+
+
+			<content-image-spaced>
+			<a href="images/test-image-6c.png">
+			<img src="images/icon-pack-template-full-sample-6c.png" width="100%" />
+			</a>
+			</content-image-spaced>
+
+
+			<content-image-spaced>
+			<a href="images/test-image-6d.png">
+			<img src="images/icon-pack-template-full-sample-6d.png" width="100%" />
+			</a>
+			</content-image-spaced>
+
+		</div>
+
+		
+		<br />
+
+		
+		<h4>To edit the icons individually:</h4>
+
+
+		<div class="grid-container-4-3-2-1">
+
+			<content-image-spaced>
+			<a href="images/test-image-6e.png">
+			<img src="images/icon-pack-template-full-sample-6e.png" width="100%" />
+			</a>
+			</content-image-spaced>
+
+
+			<content-image-spaced>
+			<a href="images/test-image-6f.png">
+			<img src="images/icon-pack-template-full-sample-6f.png" width="100%" />
+			</a>
+			</content-image-spaced>
+
+
+			<content-image-spaced>
+			<a href="images/test-image-6g.png">
+			<img src="images/icon-pack-template-full-sample-6g.png" width="100%" />
+			</a>
+			</content-image-spaced>
+
+
+			<content-image-spaced>
+			<a href="images/test-image-6h.png">
+			<img src="images/icon-pack-template-full-sample-6h.png" width="100%" />
+			</a>
+			</content-image-spaced>
+
+		</div>
+
+
+		<br />
+
+
+		<h2>Easy Mode Replica App, Easy Mode, Samsung, Weather, Date, Free Icon Font, Icon Font, Samsung UI, Weather Font, OpenWeatherMap, Easy Mode, Meteo, Icons, Font, TTF, Free.</h2>
+
+		<br />
+
+
+		<p>Click the link below to visit the GitHub repository that is being used to generate this site:</p>
+
+		<p><a href="https://github.com/boxbot6/easy-mode-replica-app">https://github.com/boxbot6/easy-mode-replica-app</a></p>
+
+
+		<br />
+
+
+
+	</div><!-- row content closing -->
+
+	
+	<div class="row footer">
+
+       		<div class="footer" style="background-color:#33475b">
+			<p>Copyright © none for this page. No Rights Reserved.</p>
+		</div>
+
+	</div><!-- row footer closing -->
+
+
+</div><!-- box closing -->
+</body>
+</html>
